@@ -67,7 +67,7 @@ body {
 
 /* Contenedor principal */
 #global-content {
-    background: #60859d6e;
+    background: #60859d23;
     width: 100%;
     max-width: 600px;
     padding: 40px;
@@ -172,6 +172,7 @@ hr{
     font-size: 14px;
     cursor: pointer;
     margin-left: auto;
+
 }
 
 .item-to-do button:hover {

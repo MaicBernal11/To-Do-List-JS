@@ -137,3 +137,11 @@ bntStyle.addEventListener('click', () => {
 
 
 })
+
+// Permitir agregar tarea presionando Enter en el input
+    input.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault(); // evita que se recargue la página si el input está dentro de un formulario
+            addBtn.click();
+        }
+});
