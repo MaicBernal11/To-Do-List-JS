@@ -177,3 +177,9 @@ hr{
 .item-to-do button:hover {
     background: rgb(94, 0, 0);
 }
+
+#cont-completed-list .item-to-do{
+
+ text-decoration: line-through;
+
+}
