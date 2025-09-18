@@ -178,7 +178,7 @@ hr{
     background: rgb(94, 0, 0);
 }
 
-#cont-completed-list .item-to-do{
+#cont-completed-list .item-to-do p{
 
  text-decoration: line-through;
 

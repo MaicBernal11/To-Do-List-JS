@@ -29,7 +29,7 @@ body {
 
 /* Contenedor principal */
 #global-content {
-    background: #58fbbaa1;
+    background: #89bbeca1;
     width: 100%;
     max-width: 600px;
     padding: 40px;
@@ -65,7 +65,7 @@ form {
 form input[type="text"] {
     flex: 1;
     padding: 10px;
-    border: 2px solid #00eaff;
+    border: 2px solid #4c51f9;
     border-radius: 8px;
     outline: none;
     transition: 0.3s;
@@ -74,7 +74,7 @@ form input[type="text"] {
 
 
 form button {
-    background: #6f71ea;
+    background: #006aff;
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
@@ -86,7 +86,7 @@ form button {
 }
 
 form button:hover {
-    background: #006aff;
+    background: #006aff9a;
 }
 
 hr{
@@ -140,7 +140,7 @@ hr{
     background: rgb(94, 0, 0);
 }
 
-#cont-completed-list .item-to-do{
+#cont-completed-list .item-to-do p{
 
  text-decoration: line-through;
 
