@@ -56,3 +56,62 @@ function createToDoItem(textItem) {
 
 //DETECTAMOS EL EVENTO CLICK SOBRE EL BOTON AGREGAR CON UN ELEMENTO DE ESCUCHA (listener) 
 //PARA QUE APARTIR DE ESTE EVENTO SE AGREGUE LA TAREA DENTRO DEL CONTENEDOR #cont-to-do-list
+
+addBtn.addEventListener('click', () => {
+
+    const textItem = input.value.trim();
+    if (textItem == "") {
+
+
+        alert("No se puede crear una tarea vacia");
+
+
+    }
+    else {
+
+        const newItem = createToDoItem(textItem);
+        toDoList.appendChild(newItem);
+        eventsToItem(newItem);
+        input.value = "";
+
+
+
+    }
+
+});
+
+//LA SIGUIENTE FUNCION NOS PERMITIRA AGREGAR EL FUNCIONAMIENTO PRINCIPAL DE LAS TAREAS ES DECIR MARCAR LA TAREA COMO COMPLETADA O EN DADO CASO ELIMINARLA
+
+
+function eventsToItem(item) {
+
+    //UTILIZAMOS querySelector PARA CAPTURAR EL INPUT Y BUTTON QUE ESTA DENTRO DEL ITEM
+
+    const checkbox = item.querySelector("input");
+    const deleteBtn = item.querySelector("button");
+
+    //COMPLETAR LA TAREA
+
+    checkbox.addEventListener('change', () => {
+
+        if (checkbox.checked) {
+            contCompletedList.appendChild(item);
+        }
+        else {
+            toDoList.appendChild(item);
+        }
+
+
+
+    })
+
+    deleteBtn.addEventListener('click', () => {
+
+        item.remove()
+
+    })
+
+
+}
+
+
