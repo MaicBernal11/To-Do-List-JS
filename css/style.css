@@ -124,7 +124,7 @@ form button {
 }
 
 form button:hover {
-    background: #00fffb;
+    background: #00fffba6;
 }
 
 hr{
@@ -137,6 +137,14 @@ hr{
 #cont-to-do-list,
 #cont-completed-list {
     margin-bottom: 20px;
+}
+
+#cont-to-do-list p,
+#cont-completed-list p{
+
+    word-break: break-word;
+    width: 90%;
+
 }
 
 /* Ítems de la lista */
@@ -191,10 +199,20 @@ hr{
     bottom: 10px;
     right: 10px;
     padding: 20px;
-    background: #00eaff;
-    color: #01051f  ;
+    background: #60859d23;
+    color: #00eaff;
     cursor: pointer;
     border-radius: 70px;
-    border: 1px solid #056dff;
+    border: 1px solid #00eaff;
+        font-family: "Fredoka", sans-serif;
+
+    
+
+}
+
+#change-style:hover {
+
+    background: #091041;
+
 
 }
