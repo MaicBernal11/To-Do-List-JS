@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Moon+Dance&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Fredoka", sans-serif;
+    color: var(--primary-color);
+}
+
+
+p,
+a,
+li,
+label,
+select,
+span {
+
+    font-family: "Raleway", sans-serif;
+    color: #050505;
+}
+
+
+
+
+:root {
+
+    --primary-color: #00ffe5;
+    --gray-color: #3e3e3e;
+    --white-color: #fff;
+    --dark-color: #1e1e1e;
+    --fs-title1: 80px;
+    --fs-title2: 38px;
+    --fs-title3: 22px;
+    --fs-title4: 18px;
+    --fs-text: 16px;
+
+}
+
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Raleway", sans-serif;
+    background: #01051f;
+    color: #333;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+#global-content {
+    background: #60859d;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border: 2px solid #00fffb;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgb(5, 222, 255);
+}
+
+/* Títulos */
+h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #17191b;
+}
+
+h2,
+h3 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+    color: #17191b;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #00eaff;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+
+form button {
+    background: #056dff;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #00fffb;
+}
+
+hr{
+
+    border-color: #00eaff;
+
+}
+
+/* Contenedores de listas */
+#cont-to-do-list,
+#cont-completed-list {
+    margin-bottom: 20px;
+}
+
+/* Ítems de la lista */
+.item-to-do {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.item-to-do:hover {
+    background: #e6e6e6;
+}
+
+/* Texto tachado en completados */
+.item-to-do.completed p {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Botón de eliminar */
+.item-to-do button {
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.item-to-do button:hover {
+    background: rgb(94, 0, 0);
+}
